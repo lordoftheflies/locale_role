@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    - locale_role_deployment_users_home: /root
+    - locale_role_testing_provider: lxd
+
+  roles:
+    - locale_role
